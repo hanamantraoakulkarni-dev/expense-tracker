@@ -22,7 +22,7 @@ def home():
 
             except ValueError:
                 print("Please enter a valid amount!")
-
+open("expenses.txt", "a", encoding="utf-8").close()
     expenses = []
 
     with open("expenses.txt", "r", encoding="utf-8") as file:
